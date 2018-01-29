@@ -2,7 +2,8 @@
 /*********************************************************************
 GENERAL
 **********************************************************************/
-
+body {
+  margin: 10px; }
 .wrap{
 
 	width:90%;
@@ -17,8 +18,37 @@ NAV
 .nav-desktop{
 background-color: #222;
 height: 80px;
+padding: 0px;
 
 }
+
+.site-logo{
+
+	color:white;
+	line-height:80px;
+
+}
+
+.nav-desktop .menu-desktop{
+
+	line-height: 80px;
+	background-color: transparent;
+}
+
+.menu >li > a {
+display:inline-block;
+line-height: 80px;
+padding-top: 0px;
+padding-bottom: 0px;
+color:white;
+
+}
+
+.menu >li > a:hover{
+
+	background-color: rgba(255,255,255,.1);
+}
+
 /*********************************************************************
 HERO
 **********************************************************************/
@@ -50,5 +80,17 @@ FOOTER
 .footer{
 height: 300px;
 background-color: #222;
+
+}
+
+/*********************************************************************
+MEDIA QUERY
+**********************************************************************/
+
+@media (max-width: 700px){
+
+	.nav-desktop{
+		display: none;
+	}
 
 }
